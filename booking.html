@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Book a Tour - Discover Lesotho</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+
+
+<header class="header">
+
+
+
+    <div class="logo">
+        Discover <span>Lesotho</span>
+    </div>
+
+
+    <nav class="A">
+
+        <a href="index.html">HOME</a>
+
+        <a href="attractions.html">ATTRACTIONS</a>
+
+        <a href="about.html">ABOUT</a>
+
+        <a href="gallery.html">GALLERY</a>
+
+        <a href="booking.html">BOOKING</a>
+
+        <a href="contact.html">CONTACT</a>
+
+        <button type="button" class="dark-mode-btn" id="bookingDarkModeToggle">
+            Dark Mode
+        </button>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+
+    <section class="title">
+
+        <h1>Plan Your Visit</h1>
+
+        <p>
+            Complete the form below to plan your visit
+            to one of the beautiful tourist attractions
+            in Lesotho.
+        </p>
+
+    </section>
+
+
+
+    <section class="container mb-4">
+
+        <div class="alert alert-info text-center" role="alert">
+            Start planning your Lesotho adventure today!
+        </div>
+
+    </section>
+
+
+
+    <section class="booking">
+
+
+        <aside class="booking-info">
+
+            <h2>Explore Lesotho</h2>
+
+            <p>
+                Lesotho offers beautiful mountains,
+                historical sites, dams and exciting
+                outdoor experiences.
+            </p>
+
+            <h3>Popular Places</h3>
+
+            <ul>
+                <li>Maletsunyane Falls</li>
+                <li>Thaba-Bosiu</li>
+                <li>Katse Dam</li>
+                <li>Sehlabathebe</li>
+                <li>Afriski Mountain Resort</li>
+                <li>Bokong Nature Reserve</li>
+            </ul>
+
+        </aside>
+
+
+        <article class="booking-form">
+
+            <h2>Tour Booking Form</h2>
+
+            <form id="bookingForm">
+
+         
+
+                <label for="fullName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    class="form-control"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+          
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="example@email.com"
+                    required
+                >
+
+         
+
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-control"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+         
+
+                <label for="destination">Choose Destination</label>
+
+                <select
+                    id="destination"
+                    name="destination"
+                    class="form-select"
+                    required
+                >
+
+                    <option value="">Select a destination</option>
+
+                    <option value="Maletsunyane Falls">
+                        Maletsunyane Falls
+                    </option>
+
+                    <option value="Thaba-Bosiu">
+                        Thaba-Bosiu
+                    </option>
+
+                    <option value="Katse Dam">
+                        Katse Dam
+                    </option>
+
+                    <option value="Sehlabathebe">
+                        Sehlabathebe National Park
+                    </option>
+
+                    <option value="Afriski">
+                        Afriski Mountain Resort
+                    </option>
+
+                    <option value="Bokong">
+                        Bokong Nature Reserve
+                    </option>
+
+                </select>
+
+
+              
+
+                <label for="people">Number of People</label>
+
+                <input
+                    type="number"
+                    id="people"
+                    name="people"
+                    class="form-control"
+                    min="1"
+                    max="20"
+                    placeholder="Number of people"
+                    required
+                >
+
+ 
+
+                <label for="accommodation">
+                    Accommodation Preference
+                </label>
+
+                <select
+                    id="accommodation"
+                    name="accommodation"
+                    class="form-select"
+                    required
+                >
+
+                    <option value="">Select accommodation</option>
+
+                    <option value="Hotel">Hotel</option>
+
+                    <option value="Lodge">Lodge</option>
+
+                    <option value="Guest House">Guest House</option>
+
+                    <option value="Camping">Camping</option>
+
+                </select>
+
+
+
+                <label for="message">Additional Information</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Tell us anything else about your trip..."
+                ></textarea>
+
+   
+
+                <button
+                    type="submit"
+                    class="btn btn-primary mt-3"
+                >
+                    Submit Booking
+                </button>
+
+            </form>
+
+  
+
+            <div
+                id="successMessage"
+                class="alert alert-success mt-3"
+                style="display:none;"
+            >
+                Your booking request has been submitted successfully!
+            </div>
+
+      
+
+            <div
+                id="errorMessage"
+                class="alert alert-danger mt-3"
+                style="display:none;"
+            >
+                Please complete all required fields.
+            </div>
+
+        </article>
+
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    <p>Discover Lesotho</p>
+
+    <p>Explore . Experience . Remember</p>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+
+
+<script>
+
+    const bookingDarkModeToggle =
+        document.getElementById("bookingDarkModeToggle");
+
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        bookingDarkModeToggle.textContent = "Light Mode";
+    }
+
+    bookingDarkModeToggle.addEventListener("click", function () {
+
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+
+            localStorage.setItem("darkMode", "enabled");
+            bookingDarkModeToggle.textContent = "Light Mode";
+
+        } else {
+
+            localStorage.setItem("darkMode", "disabled");
+            bookingDarkModeToggle.textContent = "Dark Mode";
+
+        }
+
+    });
+
+</script>
+
+</body>
+
+</html>

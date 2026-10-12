@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Contact - Discover Lesotho</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        Discover <span>Lesotho</span>
+    </div>
+
+    <nav class="A">
+
+        <a href="index.html">HOME</a>
+
+        <a href="attractions.html">ATTRACTIONS</a>
+
+        <a href="about.html">ABOUT</a>
+
+        <a href="gallery.html">GALLERY</a>
+
+        <a href="booking.html">BOOKING</a>
+
+        <a href="contact.html">CONTACT</a>
+
+        <button type="button" class="dark-mode-btn" id="contactDarkModeToggle">
+            Dark Mode
+        </button>
+
+    </nav>
+
+</header>
+
+<section class="title">
+
+    <h1>Contact Us</h1>
+
+    <p>
+        Have a question about travelling,
+        attractions or exploring Lesotho?
+        Get in touch with us.
+    </p>
+
+</section>
+
+<section class="contact-section">
+
+    <div class="contact-info">
+
+        <h2>Get In Touch</h2>
+
+        <p>
+            We would love to hear from you.
+            Contact us if you need more information
+            about tourist attractions and places
+            to explore in Lesotho.
+        </p>
+
+        <h3>Email</h3>
+
+        <p>
+            discoverlesotho@gmail.com
+        </p>
+
+        <h3>Phone</h3>
+
+        <p>
+            +266 59578072
+        </p>
+
+        <h3>Location</h3>
+
+        <p>
+            Maseru, Lesotho
+        </p>
+
+    </div>
+
+    <div class="contact-form">
+
+        <h2>Send Us A Message</h2>
+
+        <form>
+
+            <label>Name</label>
+
+            <input type="text"
+            placeholder="Enter your name">
+
+            <label>Email</label>
+
+            <input type="email"
+            placeholder="Enter your email">
+
+            <label>Subject</label>
+
+            <input type="text"
+            placeholder="Enter subject">
+
+            <label>Message</label>
+
+            <textarea
+            placeholder="Write your message"></textarea>
+
+            <button type="submit">
+                SEND MESSAGE
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>Discover Lesotho</p>
+
+    <p>Explore . Experience . Remember</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+    const contactDarkModeToggle =
+        document.getElementById("contactDarkModeToggle");
+
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        contactDarkModeToggle.textContent = "Light Mode";
+    }
+
+    contactDarkModeToggle.addEventListener("click", function () {
+
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+
+            localStorage.setItem("darkMode", "enabled");
+            contactDarkModeToggle.textContent = "Light Mode";
+
+        } else {
+
+            localStorage.setItem("darkMode", "disabled");
+            contactDarkModeToggle.textContent = "Dark Mode";
+
+        }
+
+    });
+
+</script>
+
+</body>
+
+</html>
