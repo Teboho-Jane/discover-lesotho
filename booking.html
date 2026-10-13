@@ -99,11 +99,22 @@
 
             <ul>
                 <li>Maletsunyane Falls</li>
+
                 <li>Thaba-Bosiu</li>
                 <li>Katse Dam</li>
                 <li>Sehlabathebe</li>
                 <li>Afriski Mountain Resort</li>
-                <li>Bokong Nature Reserve</li>
+                <li>Maluti Mountains</li>
+                <li>Ketane Falls</li>
+                <li>Basotho traditional villages</li>
+                <li>Kome Cave Houses</li>
+                <li>Mohale Dam</li>
+                <li>Liphofung Cave</li>
+                <li>Mafika-Lisiu Pass</li>
+                <li>Ha Baroana rock art</li>
+                <li>Traditional Basotho villages and mountain communities</li>
+                <li>Morija Museum</li>
+                <li>Thaba Putsoa</li>
             </ul>
 
         </aside>
@@ -279,6 +290,60 @@
         </article>
 
     </section>
+
+
+<!-- TOUR BOOKING COST CALCULATOR -->
+
+<section class="cost-calculator">
+
+    <h2>Tour Booking Cost Calculator</h2>
+
+    <p>Estimate the cost of your Discover Lesotho adventure.</p>
+
+    <div class="calculator-form">
+
+        <label for="calcDestination">Choose Destination</label>
+
+        <select id="calcDestination">
+            <option value="350">Maletsunyane Falls — M350/person/day</option>
+            <option value="300">Katse Dam — M300/person/day</option>
+            <option value="200">Thaba-Bosiu — M200/person/day</option>
+            <option value="400">Sehlabathebe — M400/person/day</option>
+        </select>
+
+        <label for="calcPeople">Number of Visitors</label>
+
+        <input type="number" id="calcPeople"
+               min="1" max="20" value="2">
+
+        <label for="calcDays">Number of Days</label>
+
+        <input type="number" id="calcDays"
+               min="1" max="30" value="2">
+
+        <label for="calcAccommodation">Accommodation</label>
+
+        <select id="calcAccommodation">
+            <option value="0">No Accommodation — M0</option>
+            <option value="450">Standard — M450/person/day</option>
+            <option value="850">Premium — M850/person/day</option>
+        </select>
+
+        <button type="button" id="calculateCost">
+            CALCULATE COST
+        </button>
+
+        <div class="calculator-result" aria-live="polite">
+            <h3>Estimated Total Cost</h3>
+            <p id="totalCost">M1,400</p>
+            <p id="calculatorMessage">
+                Change your selections and calculate your estimated cost.
+            </p>
+        </div>
+
+    </div>
+
+</section>
 
 </main>
 
