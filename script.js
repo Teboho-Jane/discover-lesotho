@@ -1,5 +1,5 @@
 
-// BOOKING FORM VALIDATION
+// Booking form vali
 
 
 const bookingForm = document.getElementById("bookingForm");
@@ -60,7 +60,7 @@ if (bookingForm) {
 }
 
 
-// SEARCH TOURIST ATTRACTIONS
+// Search arttraction tourist
 
 
 const searchInput = document.querySelector('.search-box input');
@@ -94,7 +94,7 @@ if (searchInput) {
 }
 
 
-// DARK / LIGHT MODE
+//darkmode
 
 
 const themeButton = document.getElementById("themeButton");
@@ -123,7 +123,6 @@ if (themeButton) {
     });
 
 
-    // CHECK SAVED THEME
 
     const savedTheme = localStorage.getItem("theme");
 
@@ -139,7 +138,7 @@ if (themeButton) {
 }
 
 
-//  FILTER TOURIST ATTRACTIONS
+//  Filter attractions
 
 
 const filterButtons = document.querySelectorAll(".filter-btn");

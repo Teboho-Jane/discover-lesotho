@@ -43,7 +43,9 @@ img {
 }
 
 .logo {
-    width: 30%;
+    width: 10%;
+    margin-left: px;
+
     font-size: 28px;
     font-weight: bold;
     white-space: nowrap;
@@ -53,6 +55,9 @@ img {
 .logo span {
     color: purple;
 }
+
+.begin{ background-color:purple;
+color:white; }
 
 .A {
     width: 70%;
@@ -202,7 +207,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    gap: 25px;
+    gap: 120px;
 }
 
 /*Home cards*/
@@ -216,7 +221,7 @@ img {
     color: black;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 12px gray;
+    box-shadow: ;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -236,13 +241,13 @@ img {
     min-width: 250px;
     max-width: 390px;
     margin: 0;
+    margin-top: 80px;
     padding: 15px;
     background-color: white;
     color: black;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 12px gray;
-    transition: transform 0.2s, box-shadow 0.2s;
+    
 }
 
 .cards > .card[data-category]:hover {
@@ -315,7 +320,7 @@ img {
     padding: 30px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 5px 15px gray;
+    box-shadow: 
     line-height: 1.7;
 }
 
@@ -357,7 +362,7 @@ img {
     padding: 25px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 5px 15px gray;
+    box-shadow: ;
     line-height: 1.6;
 }
 
@@ -399,8 +404,11 @@ img {
     color: purple;
 }
 
+.big{width: ;
+height: 50%;}
+
 .carousel {
-    width: 90%;
+    width: 50%;
     margin: 35px auto;
 }
 
@@ -461,7 +469,7 @@ img {
     padding: 30px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 5px 15px gray;
+ 
 }
 
 .booking-form h2 {
@@ -488,6 +496,8 @@ img {
     box-shadow: 0 5px 15px gray;
 }
 
+.qala{background-color: }
+
 .contact-info h2,
 .contact-info h3,
 .contact-form h2 {
@@ -513,7 +523,7 @@ img {
     padding: 30px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 5px 15px gray;
+    ;
 }
 
 .contact-form h2 {
@@ -914,7 +924,7 @@ body.dark-mode {
     background-color: white;
     color: black;
     border-radius: 20px;
-    box-shadow: 0 5px 15px gray;
+ ;
 }
 
 .cost-calculator h2 {
@@ -972,7 +982,7 @@ body.dark-mode {
     margin-top: 25px;
     padding: 20px;
     text-align: center;
-    background-color: lightblue;
+    background-color: ;
     border-radius: 12px;
 }
 
@@ -983,7 +993,7 @@ body.dark-mode {
 
 #totalCost {
     margin: 10px 0;
-    color: purple;
+    color: black;
     font-size: 32px;
     font-weight: bold;
 }
