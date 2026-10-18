@@ -1041,3 +1041,65 @@ body.dark-mode {
         font-size: 28px;
     }
 }
+
+.header .navbar {
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.header .logo img {
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+}
+
+.header .navbar-toggler {
+    border: 2px solid purple;
+    padding: 8px;
+}
+
+.header .navbar-toggler:focus {
+    box-shadow: 0 0 5px purple;
+}
+
+.header .navbar-nav .nav-link {
+    padding: 10px 12px;
+}
+
+@media screen and (max-width: 991px) {
+    .header .navbar-collapse {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .header .navbar-nav {
+        align-items: stretch !important;
+        padding-top: 10px;
+    }
+
+    .header .navbar-nav .nav-link {
+        display: block;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .header #themeButton {
+        margin: 10px 12px;
+    }
+}
+
+
+
+.header .navbar-nav .nav-link {
+    font-weight: bold;
+    color: black;
+}
+
+/* Keep navigation bold on small screens too */
+@media screen and (max-width: 991px) {
+    .header .navbar-nav .nav-link {
+        font-weight: bold;
+        color: black;
+    }
+}
